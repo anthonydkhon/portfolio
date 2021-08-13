@@ -6,7 +6,6 @@ import { AiFillLinkedin,
 import { SiCodewars } from 'react-icons/si';
 import '../../App.css';
 import devKhonLogo from '../Images/devKhonLogo.png';
-import { NavLink } from 'reactstrap'
 
 const Footer = () => {
     return (

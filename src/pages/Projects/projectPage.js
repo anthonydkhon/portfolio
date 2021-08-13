@@ -4,12 +4,12 @@ import {
     CardImg,
     CardBody,
     CardTitle,
-    CardText,
-    NavLink
+    CardText
 } from 'reactstrap';
 import pokeDexGo from'../Images/pokedexgo.PNG';
 import lumioseCity from '../Images/LumioseCity.PNG';
 import musicPlayer from '../Images/musicplayer.PNG'
+import { Link } from 'react-router-dom'
 
 const ProjectPage = () => {
     return (
@@ -21,8 +21,8 @@ const ProjectPage = () => {
                     a project to view more info.
                 </p>
             </div>
-        <div className="project-cards">
-        <NavLink href="/pokedexgo" exact={true}>
+        <div className="project-cards-page">
+        <Link to="/pokedexgo" exact={true} style={{textDecoration: 'none'}}>
             <Card>
                 <CardImg src={pokeDexGo} alt="pokedexgo" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -34,8 +34,8 @@ const ProjectPage = () => {
                     </CardText>
                 </CardBody>
             </Card>
-            </NavLink>
-            <NavLink href="/lumiosecity">
+            </Link>
+            <Link to="/lumiosecity" style={{textDecoration: 'none'}}>
             <Card>
                 <CardImg src={lumioseCity} alt="lumiosecity" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -47,8 +47,8 @@ const ProjectPage = () => {
                     </CardText>
                 </CardBody>
             </Card>
-            </NavLink>
-            <NavLink href="/musicplayer">
+            </Link>
+            <Link to="/musicplayer" style={{textDecoration: 'none'}}>
             <Card>
                 <CardImg src={musicPlayer} alt="musicPlayer" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -60,7 +60,7 @@ const ProjectPage = () => {
                     </CardText>
                 </CardBody>
             </Card>
-            </NavLink>
+            </Link>
         </div>
     </div>
     )

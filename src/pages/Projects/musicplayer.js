@@ -1,6 +1,7 @@
 import React from 'react';
 import musicPlayer from'../Images/musicplayer.PNG';
-import { Button, NavLink } from 'reactstrap';
+import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const MusicPlayer = () => {
     return (
@@ -27,13 +28,13 @@ const MusicPlayer = () => {
                 </p>
             </div>
             <div className="music-btns">
-                <NavLink href="https://github.com/anthonydkhon/musicPlayer" target="_blank">
+                <Link to="https://github.com/anthonydkhon/musicPlayer" target="_blank">
             <Button className="music-git-btn" 
             style={{ borderRadius: 20,
                 backgroundColor: `rgb(${157}, ${45}, ${231})` }}>
                     GitHub
                     </Button>
-            </NavLink>
+            </Link>
             </div>
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import lumioseCity from'../Images/LumioseCity.PNG';
-import { Button, NavLink } from 'reactstrap';
+import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const LumioseCity = () => {
     return (
@@ -42,12 +43,12 @@ const LumioseCity = () => {
                     </p>
             </div>
             <div className="lumiose-btns">
-                <NavLink href="https://github.com/anthonydkhon/lumioseCity" target="_blank">
+                <Link to="https://github.com/anthonydkhon/lumioseCity" target="_blank">
             <Button className="lumiose-git-btn" 
             style={{ borderRadius: 20,
                 backgroundColor: `rgb(${157}, ${45}, ${231})` }}
             >GitHub</Button>
-            </NavLink>
+            </Link>
             </div>
         </>
     )

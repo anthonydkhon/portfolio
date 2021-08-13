@@ -5,9 +5,9 @@ import {
     CardBody,
     CardTitle,
     CardText,
-    NavLink,
     Col
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import pokeDexGo from'../Images/pokedexgo.PNG';
 import lumioseCity from '../Images/LumioseCity.PNG';
 import musicPlayer from '../Images/musicplayer.PNG'
@@ -20,7 +20,7 @@ const Projects = () => {
             </div>
             <div className="project-cards">
             <Col sm="12" md="12" lg="4">
-            <NavLink href="/projects" style={{ width: 465 }}>
+            <Link to="/projects" style={{ width: 465, textDecoration: 'none' }}>
             <Card>
                 <CardImg src={pokeDexGo} alt="pokedexgo" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -32,10 +32,10 @@ const Projects = () => {
                     </CardText>
                 </CardBody>
             </Card>
-            </NavLink>
+            </Link>
             </Col>
             <Col sm="12" md="12" lg="4">
-            <NavLink href="/projects" style={{ width: 465 }}>
+            <Link to="/projects" style={{ width: 465, textDecoration: 'none' }}>
             <Card>
                 <CardImg src={lumioseCity} alt="lumiosecity" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -47,10 +47,10 @@ const Projects = () => {
                     </CardText>
                 </CardBody>
             </Card>
-            </NavLink>
+            </Link>
             </Col>
             <Col sm="12" md="12" lg="4">
-            <NavLink href="/projects" style={{ width: 465 }}>
+            <Link to="/projects" style={{ width: 465, textDecoration: 'none' }}>
             <Card>
                 <CardImg src={musicPlayer} alt="musicPlayer" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -62,7 +62,7 @@ const Projects = () => {
                     </CardText>
                 </CardBody>
             </Card>
-            </NavLink>
+            </Link>
             </Col>
         </div>
     </div>

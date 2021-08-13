@@ -1,6 +1,7 @@
 import React from 'react';
 import pokeDexGo from'../Images/pokedexgo.PNG';
-import { Button, NavLink } from 'reactstrap';
+import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const PokeDexGo = () => {
     return (
@@ -26,20 +27,20 @@ const PokeDexGo = () => {
                     deployed to heroku.</p>
             </div>
             <div className="pokedex-btns">
-                <NavLink href="https://github.com/anthonydkhon/pokeDex" target="_blank">
+                <Link to="https://github.com/anthonydkhon/pokeDex" target="_blank">
             <Button className="pokedex-git-btn" 
             style={{ borderRadius: 20,
                 backgroundColor: `rgb(${157}, ${45}, ${231})` }}>
                     GitHub
                     </Button>
-            </NavLink>
-            <NavLink href="https://poke-dex-go.herokuapp.com/" target="_blank">
+            </Link>
+            <Link to="https://poke-dex-go.herokuapp.com/" target="_blank">
             <Button className="pokedex-heroku-btn" 
             style={{ borderRadius: 20,
                 backgroundColor: `rgb(${157}, ${45}, ${231})` }}>
                     Deployed Site
                 </Button>
-                </NavLink>
+                </Link>
             </div>
         </>
     )

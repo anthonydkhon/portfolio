@@ -2,10 +2,10 @@ import React from 'react';
 import { 
     Navbar,
     Nav,
-    NavLink,
     NavItem,
     Row
 } from 'reactstrap';
+import { Link } from 'react-router-dom'
 import '../../../App.css'
 
 const Navigation = () => {
@@ -15,24 +15,24 @@ const Navigation = () => {
             <Navbar>
                 <Nav className="mr auto navbar">
                     <NavItem>
-                        <NavLink href="/">
+                        <Link class="nav-link" to="/">
                             Home
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/about">
+                        <Link class="nav-link" to="/about">
                             About
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/projects">
+                        <Link class="nav-link" to="/projects">
                             Projects
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="/contact">
+                        <Link class="nav-link" to="/contact">
                             Contact
-                        </NavLink>
+                        </Link>
                     </NavItem>
                 </Nav>
             </Navbar>
