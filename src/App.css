@@ -82,9 +82,11 @@ h2 {
 }
 
 .card:hover{
-  border: 8px solid var(--primary-color);
+  transform: scale(1.05);
+  box-shadow: 10px 5px 5px var(--primary-color);
+  /* border: 8px solid var(--primary-color);
   background-color: var(--primary-color);
-  opacity: 10% !important;
+  opacity: 10% !important; */
 }
 
 .card-img {
