@@ -20,7 +20,7 @@ const Projects = () => {
             </div>
             <div className="project-cards">
             <Col sm="12" md="12" lg="4">
-            <NavLink href="/projects">
+            <NavLink href="/projects" style={{ width: 465 }}>
             <Card>
                 <CardImg src={pokeDexGo} alt="pokedexgo" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -35,7 +35,7 @@ const Projects = () => {
             </NavLink>
             </Col>
             <Col sm="12" md="12" lg="4">
-            <NavLink href="/projects">
+            <NavLink href="/projects" style={{ width: 465 }}>
             <Card>
                 <CardImg src={lumioseCity} alt="lumiosecity" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>
@@ -50,7 +50,7 @@ const Projects = () => {
             </NavLink>
             </Col>
             <Col sm="12" md="12" lg="4">
-            <NavLink href="/projects">
+            <NavLink href="/projects" style={{ width: 465 }}>
             <Card>
                 <CardImg src={musicPlayer} alt="musicPlayer" />
                 <CardBody style={{ backgroundColor:`rgb(${255}, ${255}, ${255})`}}>

@@ -82,9 +82,9 @@ h2 {
 }
 
 .card:hover{
-  border: 8px solid black;
+  border: 8px solid var(--primary-color);
   background-color: var(--primary-color);
-  opacity: 100%;
+  opacity: 10%;
 }
 
 .card-img {
