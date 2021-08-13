@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Container, Button } from 'reactstrap';
+import { Container, Button, Alert } from 'reactstrap';
 
 const ContactMe = () => {
+    const [alert, setAlert] = useState({
+        show: false,
+        error: false,
+        message: '',
+    });
+
+    const hideAlert = () => {
+        setAlert({
+            ...alert,
+            show: false
+        });
+    }
+
     const sendEmail = (e) => {
         e.preventDefault();
 
     emailjs.sendForm('service_1v75opr', 'devkhon_template', e.target, 'user_sR2tD7nlbtxcJn5upfJM1')
       .then((result) => {
-          window.location.reload();
-          alert("Your message has been recieved!")
+          setAlert({
+              show: true,
+              error: false,
+              message: 'Thank you. Your message has been sent!'
+          })
           console.log(result.text);
       }, (error) => {
+        setAlert({
+            show: true,
+            error: false,
+            message: 'Error occurred.'
+        })
           console.log(error.text);
       });
   }
@@ -58,6 +79,9 @@ const ContactMe = () => {
                   </div>
                   </div>
               </form>
+            <Alert color={alert.error ? 'danger' : 'success'} isOpen={alert.show} toggle={hideAlert}>
+                {alert.message}
+            </Alert>
           </Container>
       </div>
   )

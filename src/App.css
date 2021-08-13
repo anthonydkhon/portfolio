@@ -10,6 +10,11 @@
   font-family: Space Grotesk, sans-serif;
 }
 
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
 .banner-row{
   background-color: black;
 }
@@ -271,6 +276,21 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+div.alert.alert-success.alert-dismissible.fade.show {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+
+button.close {
+  background-color: white;
+}
+
+span {
+  background-color: white;
 }
 
 @media all and (max-width: 500px) {
