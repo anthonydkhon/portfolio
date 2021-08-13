@@ -6,7 +6,7 @@ import { AiFillLinkedin,
 import { SiCodewars } from 'react-icons/si';
 import '../../App.css';
 import devKhonLogo from '../Images/devKhonLogo.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'reactstrap'
 
 const Footer = () => {
     return (
@@ -18,15 +18,15 @@ const Footer = () => {
             <div className="footer-icons">
             <IconContext.Provider
                 value={{ color: 'rgb(157, 45, 231)', size: '30px' }}>
-                <Link to="https://www.linkedin.com/in/anthony-khon-987892208/">
-                <AiFillLinkedin className="icons"/>    
-                </Link> 
-                <Link to="https://github.com/anthonydkhon">
-                <AiFillGithub className="icons" />    
-                </Link> 
-                <Link to="https://www.codewars.com/users/Anthony%20Khon">
-                <SiCodewars className="icons" />    
-                </Link> 
+                <a href="https://www.linkedin.com/in/anthony-khon-987892208/" target="_blank">
+                <AiFillLinkedin className="icons"/>   
+                </a> 
+                <a href="https://github.com/anthonydkhon" target="_blank">
+                <AiFillGithub className="icons" />   
+                </a> 
+                <a href="https://www.codewars.com/users/Anthony%20Khon" target="_blank">
+                <SiCodewars className="icons" />   
+                </a> 
             </IconContext.Provider>
             </div>
         </div>

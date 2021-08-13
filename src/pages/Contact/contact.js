@@ -30,7 +30,7 @@ const ContactMe = () => {
                   </p>
               </div>
               <form onSubmit={sendEmail}>
-                  <div>
+                  <div className="input-section">
                   <div className="input-field">
                       <input type="text" placeholder="Name"
                       name="name" required />
@@ -48,8 +48,13 @@ const ContactMe = () => {
                       name="message" />
                   </div>
                   <div>
-                  <Button className="sub-btn" type="submit" 
-                  color="secondary">Submit!</Button>
+                  <Button 
+                  className="sub-btn" 
+                  type="submit" 
+                  style={
+                      { backgroundColor: `rgb(${157}, ${45}, ${231})`, 
+                        borderRadius: 20 }
+                      }>Submit!</Button>
                   </div>
                   </div>
               </form>

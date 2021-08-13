@@ -6,7 +6,7 @@ import { Container, Col, Button } from 'reactstrap';
 const About = () => {
     return (
         <Container className="about-container" fluid={true}>
-            <Col className="text" sm="12" md="6" lg="4">
+            <Col className="text" sm="12" md="6" lg="6">
             <div className="about-me-content">
                 <h2>About Me</h2>
                     <p>Hello my name is Anthony Khon and I am a 
@@ -40,18 +40,18 @@ const About = () => {
                         would love to hear from you!
                     </p>
             </div>
-            <div>
+            <div className="about-page-btn">
             <Button className="resume-btn" 
-            style={{ borderRadius: 20 }}
-            color="primary">My Resume</Button>
-            </div>
-            <div>
+            style={{ borderRadius: 20,
+                backgroundColor: `rgb(${157}, ${45}, ${231})` }}
+            >My Resume</Button>
             <Button className="certificate-btn" 
-            style={{ borderRadius: 20 }}
-            color="primary">My Certificate</Button>
+            style={{ borderRadius: 20,
+                backgroundColor: `rgb(${157}, ${45}, ${231})` }}
+            >My Certificate</Button>
             </div>
             </Col>
-            <Col sm="12" md="6" lg="8">
+            <Col sm="12" md="6" lg="6">
             <div className="about-me-photo">
                 <img src={aboutmephoto} 
                 className="aboutme" alt="aboutmephoto" />

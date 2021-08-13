@@ -1,30 +1,40 @@
 import React from 'react';
-import Banner from '../Banner/banner.js';
 import Skills from '../Skills/skills.js';
 import Projects from '../Projects/projects.js';
-import Navigation from '../components/navbar/navbar.js';
 import ContactMe from '../Contact/contact.js';
-import Footer from '../Footer/footer.js';
-import { Row } from 'reactstrap';
+import { Row, Button, NavLink } from 'reactstrap';
+import profilephoto from '../Images/resizeBannerPhoto.jpg';
 
 
 const Home = () => {
     return (
         <>
-            <Navigation />
-            <Banner />
-                    <Row>
-                        <Skills />
-                    </Row>
-                    <Row>
-                        <Projects />
-                    </Row>
-                    <Row>
-                        <ContactMe />
-                    </Row>
-                    <Row>
-                        <Footer />
-                    </Row>
+            <Row>
+                <div className="home" id="home-id">
+                    <div className="greeting">
+                        <h3><nobr>Welcome to my portfolio!</nobr></h3>
+                        <h1><nobr>My Name is Anthony Khon</nobr></h1>
+                        <p>I am a Front End Developer specializing in JavaScript and the React.js framework.</p>
+                        <NavLink href="/about">
+                        <Button className="about-btn" style={{ borderRadius: 20 }}
+                        color="primary">About Me</Button>
+                        </NavLink>
+                    </div>
+                    <div classname="home-img">
+                        <img src={ profilephoto } alt="profilephoto" 
+                        className="profilephoto" />
+                    </div>
+                </div>
+            </Row>
+            <Row>
+                <Skills />
+            </Row>
+            <Row>
+                <Projects />
+            </Row>
+            <Row>
+                <ContactMe />
+            </Row>
         </>
     );
 }
