@@ -2,6 +2,7 @@ import React from 'react';
 import '../../App.css'
 import aboutmephoto from '../Images/aboutmephoto.jpg';
 import { Container, Col, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -41,14 +42,20 @@ const About = () => {
                     </p>
             </div>
             <div className="about-page-btn">
-            <Button className="resume-btn" 
-            style={{ borderRadius: 20,
-                backgroundColor: `rgb(${157}, ${45}, ${231})` }}
-            >My Resume</Button>
-            <Button className="certificate-btn" 
-            style={{ borderRadius: 20,
-                backgroundColor: `rgb(${157}, ${45}, ${231})` }}
-            >My Certificate</Button>
+                <a href="https://drive.google.com/drive/folders/1hOIuZGw0d5vBN_W3wxyIdh7YslkEeRbh?usp=sharing" target="_blank">
+                    <Button className="resume-btn" 
+                            style={{ borderRadius: 20,
+                            backgroundColor: `rgb(${157}, ${45}, ${231})` }}>
+                                My Resume
+                    </Button>
+                </a>
+                <a href="https://app.digit.ink/view-credential/92363288-b289-49b7-9f89-8cf6c6211404" target="_blank">
+                    <Button className="certificate-btn" 
+                            style={{ borderRadius: 20,
+                            backgroundColor: `rgb(${157}, ${45}, ${231})` }}>
+                                My Certificate
+                    </Button>
+                </a>
             </div>
             </Col>
             <Col sm="12" md="6" lg="6">

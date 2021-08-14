@@ -51,8 +51,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -10em;
-  margin-right: 1em;
+  margin-top: -8em;
+  margin-right: .5em;
 }
 
 .profilephoto,
@@ -477,6 +477,7 @@ span {
     .greeting {
       max-width: 350px;
       text-align: center;
+      margin: 0;
     }
   
     button.about-btn.btn.btn-primary {
@@ -487,10 +488,18 @@ span {
     .aboutme {
       width: 350px;
       height: 550px;
+      margin: 0;
   }
   
     .unordered-skills-list {
       display: flex;
+    }
+
+    .Projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   
     .project-cards {
@@ -504,8 +513,13 @@ span {
       align-items: center;
       max-width: 340px;
       max-height: 400px;
+      margin-bottom: 2em;
     }
-  
+
+    .card-img {
+      max-width: 340px;
+    }
+
     input {
       margin: 0;
       width: 350px;
