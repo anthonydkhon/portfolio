@@ -17,12 +17,12 @@ const About = () => {
                         focus on JavaScript and the React.js 
                         framework. I'm currently refreshing my self
                         on Back-End server work with node.js and 
-                        express.js. Back-end work is a weak point
-                        for me as of currently but I am reviewing
-                        documentation and lectures to polish my
+                        express.js. Currently I am polishing up my 
+                        knowledge on Back-end node.js. I am reviewing
+                        documentation and lectures to enhance my
                         current skills. Learning is my forte and I
-                        strive to eventually become a Full-Stack
-                        developer with goals of learning Angular, 
+                        strive to eventually take a Full-Stack
+                        developer role with goals of learning Angular, 
                         TypeScipt, and MongoDB in the future.
                     </p>
                     <p>I come from a long extensive military 
