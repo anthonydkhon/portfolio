@@ -17,12 +17,12 @@ const About = () => {
                         focus on JavaScript and the React.js 
                         framework. I'm currently refreshing my self
                         on Back-End server work with node.js and 
-                        express.js. Currently I am polishing up my 
-                        knowledge on Back-end node.js. I am reviewing
-                        documentation and lectures to enhance my
-                        current skills. Learning is my forte and I
-                        strive to eventually take a Full-Stack
-                        developer role with goals of learning Angular, 
+                        express.js. Things that I am currently working
+                        on are, Back-end work with node.js and express.js,
+                        current unfinished projects, and User Authentication.
+                        Learning is my forte and I strive to 
+                        eventually take a Full-Stack developer role 
+                        with goals of learning Angular, 
                         TypeScipt, and MongoDB in the future.
                     </p>
                     <p>I come from a long extensive military 
@@ -34,8 +34,9 @@ const About = () => {
                         different personalities in highly stressful
                         environments. For fun I love working on and 
                         building cars, hanging out and playing 
-                        sports with my kids and building projects 
-                        that connect people together or just make
+                        sports with my kids, diving into the world of
+                        comics, anime, and video games, and building 
+                        projects that connect people together or just make
                         our lives easier. If would like to connect
                         with me or even have any opportunities, I 
                         would love to hear from you!
