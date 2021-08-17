@@ -43,12 +43,12 @@ const LumioseCity = () => {
                     </p>
             </div>
             <div className="lumiose-btns">
-                <Link to="https://github.com/anthonydkhon/lumioseCity" target="_blank">
+                <a href="https://github.com/anthonydkhon/lumioseCity" target="_blank">
             <Button className="lumiose-git-btn" 
             style={{ borderRadius: 20,
                 backgroundColor: `rgb(${157}, ${45}, ${231})` }}
             >GitHub</Button>
-            </Link>
+            </a>
             </div>
         </>
     )

@@ -1,7 +1,6 @@
 import React from 'react';
 import musicPlayer from'../Images/musicplayer.PNG';
 import { Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 const MusicPlayer = () => {
     return (
@@ -28,13 +27,13 @@ const MusicPlayer = () => {
                 </p>
             </div>
             <div className="music-btns">
-                <Link to="https://github.com/anthonydkhon/musicPlayer" target="_blank">
+                <a hrefo="https://github.com/anthonydkhon/musicPlayer" target="_blank">
             <Button className="music-git-btn" 
             style={{ borderRadius: 20,
                 backgroundColor: `rgb(${157}, ${45}, ${231})` }}>
                     GitHub
                     </Button>
-            </Link>
+            </a>
             </div>
         </>
     )
